@@ -33,7 +33,8 @@ app.get('/', (req, res) => {
   console.log("Server responding")
   res.send("Hello from Heroku");
 })
-// app.use('/', indexRouter);
+
+app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
 
