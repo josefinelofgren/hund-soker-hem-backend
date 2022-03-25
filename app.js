@@ -22,7 +22,7 @@ MongoClient.connect(process.env.DB_CLOUD, {
 }).then((client) => {
   console.log("Database connected");
 
-  const db = client.db("users");
+  const db = client.db("dogs");
   app.locals.db = db;
 });
 
