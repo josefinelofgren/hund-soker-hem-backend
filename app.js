@@ -2,11 +2,11 @@ const cors = require('cors');
 const express = require('express');
 var path = require('path');
 const app = express();
-// const PORT = process.env.PORT || 8080;
-// app.listen(PORT, () => {
-//   console.log(`App listening on port ${PORT}`);
-//   console.log('Press Ctrl+C to quit.');
-// });
+const PORT = process.env.PORT || 8080;
+app.listen(PORT, () => {
+  console.log(`App listening on port ${PORT}`);
+  console.log('Press Ctrl+C to quit.');
+});
 const host = '0.0.0.0';
 require("dotenv").config();
 
