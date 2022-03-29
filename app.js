@@ -12,6 +12,7 @@ require("dotenv").config();
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+var availableDogsRouter = require('./routes/available-dogs');
 
 // connect to database
 const MongoClient = require("mongodb").MongoClient;
@@ -22,7 +23,7 @@ MongoClient.connect(process.env.DB_CLOUD, {
 }).then((client) => {
   console.log("Database connected");
 
-  const db = client.db("dogs");
+  const db = client.db("PawPatrol");
   app.locals.db = db;
 });
 
@@ -40,5 +41,6 @@ app.get('/', (req, res) => {
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+app.use('/available-dogs', availableDogsRouter);
 
 
