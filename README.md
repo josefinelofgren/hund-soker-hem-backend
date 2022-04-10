@@ -1,5 +1,5 @@
 # Paw Patrol
-This app uses mongoDB Atlas as a database. The application is deployed at XXX. You will find the front end application [here](https://github.com/josefinelofgren/pawpatrol/blob/master/README.md).
+This app uses mongoDB Atlas as a database. The application is deployed at Heroku. The front end is deployed at Github Pages and you will find the front end application [here](https://github.com/josefinelofgren/pawpatrol/blob/master/README.md).
 
 ## Run app live 
 
