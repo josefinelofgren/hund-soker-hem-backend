@@ -11,8 +11,8 @@ const host = '0.0.0.0';
 require("dotenv").config();
 
 var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
 var availableDogsRouter = require('./routes/available-dogs');
+registrationOfInterestRouter = require('./routes/registration-of-interest');
 
 // connect to database
 const MongoClient = require("mongodb").MongoClient;
@@ -40,7 +40,7 @@ app.get('/', (req, res) => {
 })
 
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
 app.use('/available-dogs', availableDogsRouter);
+app.use('/registration-of-interest', registrationOfInterestRouter);
 
 
