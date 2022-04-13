@@ -18,7 +18,7 @@ router.post("/submit", function (req, res, next) {
       }
       if (result) {
         res.send(true);
-        console.log('Registration sent')
+        console.log("Registration sent");
       }
     };
 });

@@ -31,10 +31,14 @@ router.post("/selected-dog", function (req, res, next) {
 });
 
 router.post("/matched-dogs", function (req, res, next) {
-
   req.app.locals.db
     .collection("available-dogs")
-    .find({ kids: req.body.kids, dogs: req.body.dogs, cats: req.body.cats, activityLevel: req.body.activityLevel })
+    .find({
+      kids: req.body.kids,
+      dogs: req.body.dogs,
+      cats: req.body.cats,
+      activityLevel: req.body.activityLevel,
+    })
     .toArray()
     .then((results) => {
       res.json(results);
