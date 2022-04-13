@@ -7,7 +7,7 @@ The main purpose of this project is to create a dog rescue website with a soluti
 
 Visit: [here]()
 
-This app is built in React and uses the preprocessor SASS for CSS. The application is deployed at Github Pages, you will find the front end application [here](https://github.com/josefinelofgren/pawpatrol/). The back end is built in Node.js/Express.js and uses mongoDB Atlas as a database. The back end is hosted at Heroku [here](https://pawpatrol-backend.herokuapp.com/).
+This app is built in React and uses the preprocessor SASS for CSS. The application is deployed at Github Pages, you will find the front end application [here](https://github.com/josefinelofgren/hund-soker-hem/). The back end is built in Node.js/Express.js and uses mongoDB Atlas as a database. The back end is hosted at Heroku [here](https://hund-soker-hem.herokuapp.com/).
 
 * [Setup](#setup)
     - [install](#install)
