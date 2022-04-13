@@ -1,9 +1,13 @@
-# Paw Patrol
-This app uses mongoDB Atlas as a database. The application is deployed at Heroku. The front end is deployed at Github Pages and you will find the front end application [here](https://github.com/josefinelofgren/pawpatrol/blob/master/README.md).
+# Hund Söker Hem
+This is a degree project for my education as a Front End Developer at Medieinstitutet. This project aims to create a digital and interactive website for the fictional dog rescue company “Hund Söker Hem”, that allows people to easily find their shelter dog match through a matching system. 
+
+The main purpose of this project is to create a dog rescue website with a solution that goes beyond just presenting available dogs. The solution includes encouraging better communication overall and helping people to match them with the right dogs that fits their lifestyle and preferences.
 
 ## Run app live 
 
-Visit: [here](https://pawpatrol-backend.herokuapp.com/)
+Visit: [here]()
+
+This app is built in React and uses the preprocessor SASS for CSS. The application is deployed at Github Pages, you will find the front end application [here](https://github.com/josefinelofgren/pawpatrol/). The back end is built in Node.js/Express.js and uses mongoDB Atlas as a database. The back end is hosted at Heroku [here](https://pawpatrol-backend.herokuapp.com/).
 
 * [Setup](#setup)
     - [install](#install)
@@ -19,25 +23,24 @@ To install all Javascript dependencies, run
 npm i
 ```
 
-In the project directory, you can run:
+To run the app in development mode, cd into the project directory and run
 
-#### `npm start`
+```sh
+npm run start
+```
 
-Runs the server in the development mode.\
 Open [http://localhost:8080](http://localhost:8080) to view it in your browser.
 
 
 ## Dependencies
 
-### Packages
-- create-react-app
-- react-router-dom
-- sass
+- express: "~4.16.1",
+- mongodb: "^4.4.1",
+
+### Other packages
 - cookie-parser
 - cors
 - debug
 - dotenv
-- express
 - fs
-- mongodb
 - morgan
